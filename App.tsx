@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Main from './screens/Main'
+import Main from './PH43159/Main'
 
 const App = () => {
   return (

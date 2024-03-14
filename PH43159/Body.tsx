@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, TextInput, View, Button } from 'react-native';
 
-const Body = ({ onSubmit, onChangeColor, updateTime, onAvatarChange }: { onSubmit: (name: string) => void; onChangeColor: () => void; updateTime: () => void; onAvatarChange: (name: string, avatarUrl: string) => void }) => {
+const Body = ({ onSubmit, onChangeColor, onAvatarChange }: { onSubmit: (name: string) => void; onChangeColor: () => void;  onAvatarChange: (name: string, avatarUrl: string) => void }) => {
     const [name, setName] = useState('');
     const [avatarUrl, setAvatarUrl] = useState('');
 
@@ -12,10 +12,6 @@ const Body = ({ onSubmit, onChangeColor, updateTime, onAvatarChange }: { onSubmi
 
     const handleColorChange = () => {
         onChangeColor();
-    };
-
-    const handleTimePress = () => {
-        updateTime();
     };
 
     const handleAvatarChange = (text: string) => {

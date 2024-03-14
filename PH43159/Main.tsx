@@ -44,7 +44,7 @@ const Main = () => {
                 <Body onSubmit={handleSubmit} onChangeColor={handleChangeFooterColor} updateTime={updateTime} onAvatarChange={handleAvatarChange} />
             </View>
             <View style={{flex: 1}}>
-                <Footer info={currentTime} />
+                <Footer info={currentTime} color={footerColor}/>
             </View>
         </View>
     );
